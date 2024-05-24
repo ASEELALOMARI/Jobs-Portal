@@ -1,10 +1,14 @@
 * text=auto
 
-*.blade.php diff=html
-*.css diff=css
-*.html diff=html
-*.md diff=markdown
-*.php diff=php
+*.blade.php linguist-language=HTML
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+*.md linguist-language=Markdown
+*.php linguist-language=PHP
+
+# Specify directories to be ignored by linguist
+/vendor/* linguist-vendored
+/node_modules/* linguist-vendored
 
 /.github export-ignore
 CHANGELOG.md export-ignore
